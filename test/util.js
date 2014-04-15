@@ -12,10 +12,7 @@ describe('util', function() {
       util.isObject(new Object()).should.be.true;
     });
 
-    it('should detect arrays', function() {
-      util.isObject([]).should.be.false;
-      util.isObject(new Array()).should.be.false;
-    });
+    
 
     it('should detect nulls', function() {
       util.isObject(null).should.be.false;
